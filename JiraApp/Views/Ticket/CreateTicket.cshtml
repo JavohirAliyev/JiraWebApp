@@ -1,0 +1,68 @@
+﻿@model dynamic
+@{
+    ViewData["Title"] = "Create Support Ticket";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            @if (!ViewData.ModelState.IsValid)
+            {
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                        {
+                            <li>@error.ErrorMessage</li>
+                        }
+                    </ul>
+                </div>
+            }
+            <div class="card shadow-lg">
+                <div class="card-header bg-primary text-white">
+                    <h4 class="mb-0">Create Ticket</h4>
+                </div>
+                <div class="card-body">
+                    <form method="post" asp-controller="Ticket" asp-action="CreateTicket" >
+                        <div class="form-group">
+                            <label for="summary">Summary</label>
+                            <input type="text" id="summary" name="summary" class="form-control" placeholder="Enter the ticket summary" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="priority">Priority</label>
+                            <select id="priority" name="priority" class="form-control" required>
+                                <option value="" disabled selected>Select priority</option>
+                                <option>High</option>
+                                <option>Medium</option>
+                                <option>Low</option>
+                            </select>
+                        </div>
+                        <div class="form-group text-center">
+                            <button type="submit" class="btn btn-success mt-3 btn-lg">Create Ticket</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    .card {
+        border-radius: 10px;
+    }
+
+    .card-header {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .btn-lg {
+        padding: 10px 20px;
+    }
+</style>

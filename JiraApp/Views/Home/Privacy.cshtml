@@ -1,0 +1,45 @@
+﻿@{
+    ViewData["Title"] = "How to create a new Ticket?";
+}
+<h1>@ViewData["Title"]</h1>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h2 class="mb-0">How to Use This Application</h2>
+                </div>
+                <div class="card-body">
+                    <h3 class="mb-4">Creating a Ticket</h3>
+                    <p class="lead">Follow these steps to create a ticket:</p>
+                    <ol class="mb-4">
+                        <li>Go to the <a href="/Ticket/Create" class="text-primary">Create Ticket</a> page.</li>
+                        <li>Fill in the form with the required details:</li>
+                        <ul>
+                            <li><strong>Summary:</strong> A brief summary of the issue.</li>
+                            <li><strong>Priority:</strong> The priority level of the issue.</li>
+                        </ul>
+                        <li>Click the <strong>Create Ticket</strong> button to submit the form.</li>
+                        <li>You will be redirected to the <a href="/Ticket/ViewTickets" class="text-primary">View Tickets</a> page where you can see all created tickets.</li>
+                    </ol>
+                    <h3 class="mb-4">Viewing Tickets</h3>
+                    <p class="lead">To view all tickets:</p>
+                    <ul class="mb-4">
+                        <li>Navigate to the <a href="/Ticket/ViewTickets" class="text-primary">View Tickets</a> page.</li>
+                        <li>You will see a list of all tickets associated with the current project.</li>
+                    </ul>
+                    <h3 class="mb-4">Common Issues</h3>
+                    <p class="lead">Here are some common issues and troubleshooting steps:</p>
+                    <ul class="mb-4">
+                        <li><strong>Error creating a ticket:</strong> Ensure all required fields are filled in correctly.</li>
+                        <li><strong>Unable to see tickets:</strong> Ensure you have the necessary permissions to view tickets in the project.</li>
+                        <li><strong>Unable to create tickets:</strong> Ensure you have an Atlassian account and have joined <a href="dotnetitransition.atlassian.net">our project's website</a></li>
+                    </ul>
+                    <h3 class="mb-4">Need More Help?</h3>
+                    <p class="lead">If you need further assistance, please contact the support team at <a href="mailto:jakhaaliyev@gmail.com" class="text-primary">jakhaaliyev@gmail.com</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

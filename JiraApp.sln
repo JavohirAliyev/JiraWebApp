@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34916.146
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JiraApp", "JiraApp\JiraApp.csproj", "{05EBA70A-0461-49DF-A480-9B67E4A15DAB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{05EBA70A-0461-49DF-A480-9B67E4A15DAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05EBA70A-0461-49DF-A480-9B67E4A15DAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05EBA70A-0461-49DF-A480-9B67E4A15DAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05EBA70A-0461-49DF-A480-9B67E4A15DAB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {56C92116-54F9-4F7A-9E73-9DFE5D5C0160}
+	EndGlobalSection
+EndGlobal
